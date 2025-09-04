@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Job Board</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Browse Jobs</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="btn">Post a Job</button>
+  </nav>
+
+  <header class="hero">
+    <h1>Find Your Dream Job</h1>
+    <p>Search through thousands of jobs and apply instantly</p>
+    <button class="btn">Upload Your Resume</button>
+  </header>
+
+  <section class="job-search">
+    <input type="text" id="keyword" placeholder="Search keyword">
+    <input type="text" id="location" placeholder="Location">
+    <input type="text" id="category" placeholder="Category">
+    <button class="btn" onclick="loadJobs()">Find Job</button>
+  </section>
+
+  <section class="job-list" id="job-list"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
